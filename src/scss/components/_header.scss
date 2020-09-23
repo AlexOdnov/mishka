@@ -1,15 +1,28 @@
 .header {
-  $header-height: 90px;
+  $header-height: 80px;
 
   position: sticky;
   top: 0;
   left: 0;
 
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: $header-height;
 
-  background-color: $color-accent-1;
+  border-bottom: 1px solid $color-light-2;
+  background-color: $bg-color-base;
 
   z-index: 5;
+
+  @media #{$tablet} {
+    position: static;
+
+    height: auto;
+
+    background-color: $color-light-4;
+  }
 
   &::after {
     content: '';
@@ -18,10 +31,11 @@
     top: 0;
 
     display: block;
-    width: 100vw;
+    width: 100%;
     height: $header-height;
 
-    background-color: $color-accent-1;
+    background-color: $bg-color-base;
+    border-bottom: 1px solid $color-light-2;
 
     z-index: 5;
     @media #{$tablet} {
@@ -29,25 +43,35 @@
     }
   }
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: $header-height;
+  // &__container {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 100%;
+  //   height: $header-height;
 
+  //   @media #{$tablet} {
+  //     height: auto;
+  //   }
+  // }
+
+  &__navigation {
     @media #{$tablet} {
-      height: auto;
+      max-width: $container-width;
     }
   }
 
   &__logo {
     z-index: 10;
+
+    @media #{$tablet} {
+      display: none;
+    }
   }
 
   &__mmt {
-    position: fixed;
-    top: 25px;
-    right: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 
     z-index: 10;
     @media #{$tablet} {

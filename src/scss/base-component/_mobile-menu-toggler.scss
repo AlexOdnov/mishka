@@ -1,5 +1,5 @@
 .mobile-menu-toggler {
-  $mmt-color: #000;
+  $mmt-color: $logo-color;
   $mmt-size: 40px;
 
   position: relative;
@@ -42,14 +42,23 @@
   }
 
   &:hover,
-  &:focus,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: $logo-color--hover;
+    }
+    .mobile-menu-toggler__element {
+      background-color: $logo-color--hover;
+    }
+  }
+
   &:active {
     &::before,
     &::after {
-      background-color: #fff;
+      background-color: $logo-color--active;
     }
     .mobile-menu-toggler__element {
-      background-color: #fff;
+      background-color: $logo-color--active;
     }
   }
 

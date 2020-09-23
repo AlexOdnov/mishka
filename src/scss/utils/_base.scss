@@ -1,10 +1,14 @@
-body {
+html {
   color: $font-color-base;
   font-family: $font-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
 
   background-color: $bg-color-base;
+
+  @media #{$tablet} {
+    font-size: $font-size-base-des;
+  }
 }
 
 .container {
@@ -12,6 +16,11 @@ body {
   max-width: $container-width;
   padding-left: $container-padding;
   padding-right: $container-padding;
+
+  @media #{$tablet} {
+    padding-left: $container-padding-des;
+    padding-right: $container-padding-des;
+  }
 }
 
 .non-scrollable {

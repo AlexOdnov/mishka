@@ -1,43 +1,58 @@
 $color-light-1: #fff;
+$color-light-2: #ececec; //border
+$color-light-3: #f1f1f1; //footer
+$color-light-4: #f9f9f9; //header
 $color-dark-1: #000;
-$color-accent-1: #230597;
+$color-dark-2: #444444;
+$color-accent-1: #63d1bb;
+$color-accent-2: #56c3b2; //dark
 
-$font-color-base: $color-dark-1;
+$font-color-base: $color-dark-2;
 $font-color-light: $color-light-1;
 $font-color-title: $color-dark-1;
 $font-color-link: $color-dark-1;
 $font-color-link--hover: rgba($color-dark-1, 0.6);
 $font-color-link--active: rgba($color-dark-1, 0.3);
-$font-color-btn: $color-dark-1;
+$font-color-btn: $color-dark-2;
 $font-color-btn--hover: $color-light-1;
 $font-color-btn--active: rgba($color-light-1, 0.3);
 
 $bg-color-base: $color-light-1;
 $bg-color-dark: $color-dark-1;
 $bg-color-btn: $color-light-1;
-$bg-color-btn--hover: $color-dark-1;
-$bg-color-btn--active: $color-dark-1;
+$bg-color-btn--hover: $color-dark-2;
+$bg-color-btn--active: $color-dark-2;
 
-$icon-color: $color-accent-1;
-$icon-color--hover: rgba($color-accent-1, 0.6);
+$icon-color: rgba($color-dark-1, 0.2);
+$icon-color--hover: $color-accent-1;
 $icon-color--active: rgba($color-accent-1, 0.3);
 
-$border-color: $color-dark-1;
+$logo-color: $color-dark-1;
+$logo-color--hover: rgba($color-dark-1, 0.6);
+$logo-color--active: rgba($color-dark-1, 0.3);
+
+$border-color: $color-dark-2;
+$border-color--hover: $color-dark-2;
+$border-color--active: $color-dark-2;
 
 $font-base: 'Open Sans', sans-serif;
 $font-accent: 'Roboto', sans-serif;
 
-$font-size-base: 16px;
-$font-size-small: 0.8rem;
+$font-size-base: 15px;
+$font-size-base-des: 17px;
+$font-size-small: 12px;
 $font-size-big: 1.2rem;
-$font-size-title: 2rem;
+$font-size-title: 1.6rem;
+$font-size-title-tab: 2.5rem;
+$font-size-title-des: 3.3rem;
 
 $font-weight-base: 400;
 $font-weight-bold: 700;
 $font-weight-thin: 100;
 
-$container-width: 1200px;
+$container-width: 1150px;
 $container-padding: 30px;
+$container-padding-des: 50px;
 
 //breakpoint
 $bp-mob: 320px;

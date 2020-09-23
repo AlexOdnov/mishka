@@ -47,5 +47,8 @@
     "gulp-webp": "^4.0.1",
     "webpack": "^4.44.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "swiper": "^6.2.0"
   }
 }

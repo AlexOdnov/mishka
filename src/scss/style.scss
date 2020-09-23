@@ -5,7 +5,8 @@
 @import './utils/base';
 
 // third party lib
-// @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/components/navigation/navigation.scss';
 
 // scss base component
 @import './base-component/mobile-menu-toggler';

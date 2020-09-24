@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: $header-height;
 
   border-bottom: 1px solid $color-light-2;
@@ -43,24 +43,15 @@
     }
   }
 
-  // &__container {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   width: 100%;
-  //   height: $header-height;
-
-  //   @media #{$tablet} {
-  //     height: auto;
-  //   }
-  // }
-
   &__navigation {
     @media #{$tablet} {
       max-width: $container-width;
+      margin: 0 auto;
     }
   }
 
   &__logo {
+    display: flex;
     z-index: 10;
 
     @media #{$tablet} {

@@ -23,6 +23,20 @@ html {
   }
 }
 
+.title {
+  margin: 0;
+
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+  color: $font-color-title;
+  @media #{$tablet} {
+    font-size: $font-size-title-tab;
+  }
+  @media #{$desktop} {
+    font-size: $font-size-title-des;
+  }
+}
+
 .non-scrollable {
   overflow-y: hidden;
 }

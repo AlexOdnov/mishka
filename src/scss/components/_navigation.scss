@@ -7,6 +7,8 @@
   left: 0;
 
   width: 100%;
+  max-height: calc(100vh - #{$header-height} - #{$mob-mozilla});
+  overflow-y: auto;
 
   color: $font-color-base;
 
@@ -22,6 +24,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-height: initial;
+    overflow-y: initial;
 
     transform: translateY(0);
   }
@@ -37,22 +41,10 @@
   &__logo {
     display: none;
     @media #{$tablet} {
+      position: relative;
+
       display: flex;
       padding-left: $container-padding-tab;
-    }
-    @media #{$desktop} {
-      order: 2;
-    }
-  }
-  // .navigation__site-list
-  &__site-list {
-    @media #{$tablet} {
-      flex-basis: 50%;
-      order: 1;
-      padding-left: $container-padding-tab;
-
-      border-top: 1px solid $color-light-2;
-      background-color: $color-light-4;
       &::before {
         content: '';
 
@@ -71,6 +63,24 @@
       }
     }
     @media #{$desktop} {
+      order: 2;
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  // .navigation__site-list
+  &__site-list {
+    @media #{$tablet} {
+      flex-basis: 50%;
+      order: 1;
+      padding-left: $container-padding-tab;
+
+      border-top: 1px solid $color-light-2;
+      background-color: $color-light-4;
+    }
+    @media #{$desktop} {
       position: relative;
 
       flex-basis: 40%;
@@ -79,13 +89,30 @@
 
       border-top: none;
       background-color: $bg-color-base;
+      &::before {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        display: block;
+        width: calc((100vw - #{$container-width}) / 2);
+        height: calc(100% + 1px);
+
+        background-color: $bg-color-base;
+        border-bottom: 1px solid $color-light-2;
+
+        transform: translateX(-100%);
+      }
     }
   }
   // .navigation__user-list
   &__user-list {
     @media #{$tablet} {
-      flex-basis: 55%;
-      justify-content: flex-end;
+      position: relative;
+
+      flex-basis: 60%;
       padding-right: $container-padding-tab;
       &::before {
         content: '';
@@ -105,12 +132,8 @@
       }
     }
     @media #{$desktop} {
-      position: relative;
-
       flex-basis: 40%;
-      justify-content: flex-end;
       order: 3;
-      padding-right: $container-padding-tab;
     }
   }
   // .navigation__shop-list
@@ -120,6 +143,7 @@
       display: flex;
       flex-basis: 50%;
       order: 4;
+      padding-left: $container-padding-tab;
 
       background-color: $color-light-4;
       border-top: 1px solid $color-light-2;

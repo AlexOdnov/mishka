@@ -1,0 +1,15 @@
+.about {
+  // .about__container
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media #{$desktop} {
+      max-width: 800px;
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+  }
+  // .about__advantages-list
+  &__advantages-list {
+  }
+}

@@ -1,0 +1,42 @@
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(125px, min-content);
+  column-gap: 20px;
+  @media #{$tablet} {
+    grid-auto-rows: minmax(155px, min-content);
+  }
+  @media #{$desktop} {
+    grid-template-rows: repeat(3, minmax(155px, min-content));
+    grid-auto-flow: column;
+  }
+  // .advantages-list__item
+  &__item {
+    position: relative;
+
+    padding-top: 80px;
+    @media #{$tablet} {
+      padding-top: 90px;
+      padding-bottom: 20px;
+    }
+    @media #{$desktop} {
+      padding-right: 55px;
+    }
+  }
+  // .advantages-list__icon
+  &__icon {
+    position: absolute;
+    top: 50px;
+
+    fill: $color-accent-1;
+
+    transform: translateY(-50%);
+    @media #{$tablet} {
+      top: 55px;
+    }
+  }
+  // .advantages-list__text
+  &__text {
+    font-weight: $font-weight-bold;
+  }
+}

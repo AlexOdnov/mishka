@@ -1,0 +1,16 @@
+.characteristics {
+  font-size: $font-size-base;
+  // .characteristics__row
+  &__row {
+    box-shadow: 0 1px 0 0 $color-light-2;
+  }
+  // .characteristics__cell
+  &__cell {
+    padding-right: 10px;
+
+    line-height: 40px;
+    &:first-child {
+      width: 34%;
+    }
+  }
+}

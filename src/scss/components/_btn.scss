@@ -17,8 +17,12 @@
 
   &:hover,
   &:focus {
+    background-color: $font-color-base;
+    color: $font-color-btn--hover;
   }
+
   &:active {
+    color: $font-color-btn--active;
   }
 
   // .btn--wide

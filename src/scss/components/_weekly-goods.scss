@@ -1,0 +1,140 @@
+.weekly-goods {
+  position: relative;
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 6px;
+
+    background-image: url(../../img/backgrounds/bg-zigzag-line.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    @media #{$tablet} {
+      height: 16px;
+    }
+  }
+  // .weekly-goods__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    @media #{$tablet} {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
+    @media #{$desktop} {
+      padding-top: 65px;
+      padding-bottom: 95px;
+    }
+  }
+  // .weekly-goods__header
+  &__header {
+    margin-bottom: 20px;
+    align-self: start;
+    @media #{$tablet} {
+      display: flex;
+      flex-basis: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    @media #{$desktop} {
+      position: absolute;
+      top: 110px;
+
+      flex-direction: row-reverse;
+      justify-content: start;
+    }
+  }
+  // .weekly-goods__title
+  &__title {
+  }
+  // .weekly-goods__mark
+  &__mark {
+    color: $color-accent-1;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-big;
+    @media #{$tablet} {
+      width: 126px;
+
+      text-align: center;
+      font-size: $font-size-base-tab;
+    }
+    @media #{$desktop} {
+      display: flex;
+      align-items: center;
+      width: 175px;
+      padding: 0 45px;
+    }
+  }
+  // .weekly-goods__wrapper
+  &__wrapper {
+    display: grid;
+    row-gap: 27px;
+    @media #{$tablet} {
+      grid-template-rows: repeat(4, min-content);
+      grid-template-columns: 43% 50%;
+      column-gap: 7%;
+    }
+    @media #{$desktop} {
+      grid-template-rows: 135px min-content 1fr repeat(2, min-content);
+      column-gap: 6%;
+      grid-template-columns: 34% 60%;
+      margin-left: 175px;
+    }
+  }
+  // .weekly-goods__description
+  &__description {
+    @media #{$desktop} {
+      grid-row: 2;
+    }
+  }
+  // .weekly-goods__characteristics
+  &__characteristics {
+    width: 100%;
+    @media #{$desktop} {
+      align-self: start;
+    }
+    @media #{$desktop} {
+      grid-row: 3;
+    }
+  }
+  // .weekly-goods__img
+  &__img {
+    justify-self: center;
+    height: 100%;
+    @media #{$tablet} {
+      grid-column: -1 / -2;
+      grid-row: 1 / 5;
+      justify-self: end;
+    }
+    @media #{$desktop} {
+      grid-row: 1 / 6;
+    }
+  }
+  // .weekly-goods__price
+  &__price {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-big;
+    text-align: center;
+    @media #{$desktop} {
+      grid-row: 4;
+    }
+  }
+  // .weekly-goods__btn
+  &__btn {
+    @media #{$desktop} {
+      grid-row: 5;
+    }
+  }
+}

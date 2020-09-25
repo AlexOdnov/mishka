@@ -1,0 +1,109 @@
+.contacts {
+  // .contacts__container
+  &__container {
+    position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow-x: hidden;
+
+    @media #{$tablet} {
+      padding-top: 50px;
+      padding-bottom: 60px;
+    }
+
+    @media #{$desktop} {
+      padding-bottom: 100px;
+      padding-top: 70px;
+      padding-left: 175px;
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      grid-template-rows: repeat(5, min-content);
+    }
+  }
+  // .contacts__title
+  &__title {
+    position: relative;
+
+    margin-bottom: 35px;
+    flex-basis: 100%;
+    @media #{$tablet} {
+      margin-bottom: 45px;
+      &::after {
+        content: '';
+
+        position: absolute;
+        right: 0;
+        top: 50%;
+
+        display: block;
+        width: 47px;
+        height: 82px;
+
+        background-image: url(../../img/backgrounds/flag.svg);
+
+        transform: translateY(-50%);
+      }
+    }
+    @media #{$desktop} {
+      margin-bottom: 40px;
+      grid-row: 2;
+      &::after {
+        left: -110px;
+      }
+    }
+  }
+  // .contacts__list
+  &__list {
+    flex-basis: 100%;
+    margin-bottom: 540px;
+    @media #{$tablet} {
+      flex-basis: 100%;
+      margin-bottom: 570px;
+    }
+    @media #{$desktop} {
+      margin-bottom: 80px;
+      grid-row: 3;
+    }
+  }
+  // .contacts__map
+  &__map {
+    position: absolute;
+    bottom: 96px;
+    left: 0;
+
+    margin-bottom: 40px;
+    width: 100vw;
+    height: 460px;
+    @media #{$tablet} {
+      bottom: 116px;
+
+      margin-bottom: 60px;
+    }
+    @media #{$desktop} {
+      position: static;
+      width: 525px;
+      grid-row: 1 / 5;
+      grid-column: 2 / 3;
+      justify-self: end;
+      margin-bottom: 0;
+    }
+  }
+  // .contacts__btn-wrapper
+  &__btn-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    @media #{$desktop} {
+      grid-row: 4;
+      justify-self: start;
+    }
+  }
+  // .contacts__btn
+  &__btn {
+  }
+}

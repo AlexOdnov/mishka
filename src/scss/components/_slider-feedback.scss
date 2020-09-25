@@ -67,17 +67,20 @@
     align-items: center;
     flex-basis: 50%;
 
-    background-color: transparent;
+    fill: $logo-color;
+    background-color: $bg-color-base;
     border: 1px solid $color-light-2;
+
+    transition: fill 0.3s ease 0s;
     @media #{$tablet} {
       border: 1px transparent;
     }
     &:hover,
     &:focus {
-      opacity: 0.6;
+      fill: $logo-color--hover;
     }
     &:active {
-      opacity: 0.3;
+      fill: $logo-color--active;
     }
   }
 }

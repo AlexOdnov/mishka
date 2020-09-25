@@ -34,4 +34,16 @@
     display: flex;
     margin: 0 auto;
   }
+  // .btn--green
+  &--green {
+    color: $color-light-1;
+    background-color: $color-accent-1;
+    border-color: $color-accent-1;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-accent-1;
+      background-color: $color-light-1;
+    }
+  }
 }

@@ -1,3 +1,35 @@
-<div class="modal modal-test">
-  <div class="modal__content"></div>
+<div class="modal modal-order">
+  <div class="modal__content">
+    <form class="order-form" action="#">
+      <h2 class="order-form__title title">добавить в корзину</h2>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__legend">Выберите размер:</legend>
+        <div class="order-form__wrapper">
+          <input
+            class="order-form__radio visually-hidden"
+            type="radio"
+            name="size"
+            id="size-s"
+            checked
+          />
+          <label class="order-form__label" for="size-s">s </label>
+          <input
+            class="order-form__radio visually-hidden"
+            type="radio"
+            name="size"
+            id="size-m"
+          />
+          <label class="order-form__label" for="size-m">m </label>
+          <input
+            class="order-form__radio visually-hidden"
+            type="radio"
+            name="size"
+            id="size-l"
+          />
+          <label class="order-form__label" for="size-l">l </label>
+        </div>
+      </fieldset>
+      <button class="btn btn--wide btn--green" type="submit">добавить</button>
+    </form>
+  </div>
 </div>

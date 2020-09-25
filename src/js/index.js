@@ -1,5 +1,6 @@
 import mobileMenu from './mobileMenu';
 import { Swiper, Navigation } from 'swiper';
+import modal from './modal';
 
 Swiper.use(Navigation);
 
@@ -33,4 +34,5 @@ const init = () => {
 };
 
 mobileMenu();
+modal('order');
 ymaps.ready(init);

@@ -8,7 +8,7 @@
   visibility: hidden;
   pointer-events: none;
 
-  background-color: rgba($color-dark-1, 0.9);
+  background-color: rgba($color-light-1, 0.9);
   opacity: 0;
   transition: all 0.3s ease 0s;
   z-index: 10;
@@ -20,6 +20,8 @@
     left: 50%;
 
     max-height: 100vh;
+    min-width: 320px;
+    max-width: 566px;
 
     background-color: $bg-color-base;
     border: 1px solid $border-color;
@@ -28,6 +30,9 @@
     transform: translate(-50%, -50%);
 
     overflow-y: auto;
+    @media #{$tablet} {
+      min-width: 566px;
+    }
   }
 
   &.active {

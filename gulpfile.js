@@ -190,7 +190,6 @@ const svgSprite = () => {
       ])
     )
     .pipe(replace(/class=".*?"/g, ''))
-    .pipe(replace(/fill=".*?"/g, ''))
     .pipe(
       svgsprite({
         mode: {

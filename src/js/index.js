@@ -2,6 +2,7 @@ import mobileMenu from './mobileMenu';
 import { Swiper, Navigation } from 'swiper';
 import modal from './modal';
 import mapYandex from './mapYandex';
+import mockVideo from './_mockVideo';
 
 Swiper.use(Navigation);
 
@@ -21,4 +22,7 @@ if (document.querySelector('.modal')) {
 }
 if (document.querySelector('#map')) {
   mapYandex();
+}
+if (document.querySelector('.video')) {
+  mockVideo();
 }

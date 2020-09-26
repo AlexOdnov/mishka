@@ -46,4 +46,23 @@
       background-color: $color-light-1;
     }
   }
+  // .btn--cart
+  &--cart {
+    padding: 0;
+
+    fill: $icon-color;
+    background-color: $bg-color-base;
+    border-color: transparent;
+    &:hover,
+    &:focus {
+      fill: $icon-color--hover;
+      background-color: $bg-color-base;
+      border-color: transparent;
+    }
+    &:active {
+      fill: $icon-color--active;
+      background-color: $bg-color-base;
+      border-color: transparent;
+    }
+  }
 }

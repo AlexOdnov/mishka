@@ -5,14 +5,20 @@ import mapYandex from './mapYandex';
 
 Swiper.use(Navigation);
 
-const swiperFeedback = new Swiper('.slider-feedback', {
-  loop: true,
-  navigation: {
-    nextEl: '.slider-feedback__next',
-    prevEl: '.slider-feedback__prev',
-  },
-});
+if (document.querySelector('.slider-feedback')) {
+  const swiperFeedback = new Swiper('.slider-feedback', {
+    loop: true,
+    navigation: {
+      nextEl: '.slider-feedback__next',
+      prevEl: '.slider-feedback__prev',
+    },
+  });
+}
 
 mobileMenu();
-modal('order');
-mapYandex();
+if (document.querySelector('.modal')) {
+  modal('order');
+}
+if (document.querySelector('#map')) {
+  mapYandex();
+}

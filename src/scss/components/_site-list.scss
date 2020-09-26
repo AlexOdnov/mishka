@@ -41,11 +41,11 @@
 
     transition: color 0.3s ease 0s;
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       color: $font-color-link--hover;
     }
-    &:active {
+    &[href]:active {
       color: $font-color-link--active;
     }
 

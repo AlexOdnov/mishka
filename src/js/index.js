@@ -2,7 +2,7 @@ import mobileMenu from './mobileMenu';
 import { Swiper, Navigation } from 'swiper';
 import modal from './modal';
 import mapYandex from './mapYandex';
-import mockVideo from './_mockVideo';
+import mockVideo from './mockVideo';
 
 Swiper.use(Navigation);
 

@@ -1,23 +1,26 @@
 .shop-list {
   flex-wrap: wrap;
   padding-left: $container-padding-tab;
-  // .shop-list__item
+
+  //.shop-list__item
   &__item {
     flex-basis: 205px;
     padding: 0 35px;
+
     &:nth-child(2n + 1) {
       padding-left: 0;
     }
   }
-  // .shop-list__link
+
+  //.shop-list__link
   &__link {
     display: block;
     padding: 20px 0;
 
-    font-size: $font-size-base;
     font-weight: $font-weight-bold;
-    color: $font-color-link;
+    font-size: $font-size-base;
     text-decoration: none;
+    color: $font-color-link;
 
     transition: color 0.3s ease 0s;
 

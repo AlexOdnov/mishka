@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 5;
 
   display: flex;
   align-items: center;
@@ -11,10 +12,8 @@
   width: 100%;
   height: $header-height;
 
-  border-bottom: 1px solid $color-light-2;
   background-color: $bg-color-base;
-
-  z-index: 5;
+  border-bottom: 1px solid $color-light-2;
 
   @media #{$tablet} {
     position: static;
@@ -29,6 +28,7 @@
 
     position: absolute;
     top: 0;
+    z-index: 5;
 
     display: block;
     width: 100%;
@@ -37,7 +37,6 @@
     background-color: $bg-color-base;
     border-bottom: 1px solid $color-light-2;
 
-    z-index: 5;
     @media #{$tablet} {
       display: none;
     }
@@ -51,8 +50,9 @@
   }
 
   &__logo {
-    display: flex;
     z-index: 10;
+
+    display: flex;
 
     @media #{$tablet} {
       display: none;
@@ -63,8 +63,8 @@
     position: absolute;
     top: 20px;
     right: 20px;
-
     z-index: 10;
+
     @media #{$tablet} {
       display: none;
     }

@@ -1,14 +1,13 @@
 .contacts {
-  // .contacts__container
+  //.contacts__container
   &__container {
     position: relative;
 
-    padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
     overflow-x: hidden;
 
     @media #{$tablet} {
@@ -17,28 +16,31 @@
     }
 
     @media #{$desktop} {
-      padding-bottom: 100px;
-      padding-top: 70px;
-      padding-left: 175px;
       display: grid;
       grid-template-columns: 350px 1fr;
       grid-template-rows: repeat(5, min-content);
+      padding-top: 70px;
+      padding-bottom: 100px;
+      padding-left: 175px;
     }
   }
-  // .contacts__title
+
+  //.contacts__title
   &__title {
     position: relative;
+    flex-basis: 100%;
 
     margin-bottom: 35px;
-    flex-basis: 100%;
+
     @media #{$tablet} {
       margin-bottom: 45px;
+
       &::after {
         content: '';
 
         position: absolute;
-        right: 0;
         top: 50%;
+        right: 0;
 
         display: block;
         width: 47px;
@@ -49,61 +51,73 @@
         transform: translateY(-50%);
       }
     }
+
     @media #{$desktop} {
-      margin-bottom: 40px;
       grid-row: 2;
+      margin-bottom: 40px;
+
       &::after {
         left: -110px;
       }
     }
   }
-  // .contacts__list
+
+  //.contacts__list
   &__list {
     flex-basis: 100%;
     margin-bottom: 540px;
+
     @media #{$tablet} {
       flex-basis: 100%;
       margin-bottom: 570px;
     }
+
     @media #{$desktop} {
-      margin-bottom: 80px;
       grid-row: 3;
+      margin-bottom: 80px;
     }
   }
-  // .contacts__map
+
+  //.contacts__map
   &__map {
     position: absolute;
     bottom: 96px;
     left: 0;
 
-    margin-bottom: 40px;
     width: 100%;
     height: 460px;
+    margin-bottom: 40px;
+
     @media #{$tablet} {
       bottom: 116px;
 
       margin-bottom: 60px;
     }
+
     @media #{$desktop} {
       position: static;
-      width: 525px;
-      grid-row: 1 / 5;
-      grid-column: 2 / 3;
+
       justify-self: end;
+      grid-column: 2 / 3;
+      grid-row: 1 / 5;
+      width: 525px;
       margin-bottom: 0;
     }
   }
-  // .contacts__btn-wrapper
+
+  //.contacts__btn-wrapper
   &__btn-wrapper {
-    flex-basis: 100%;
     display: flex;
+    flex-basis: 100%;
     justify-content: center;
+
     @media #{$desktop} {
-      grid-row: 4;
       justify-self: start;
+      grid-row: 4;
     }
   }
-  // .contacts__btn
+
+  //.contacts__btn
   &__btn {
   }
 }

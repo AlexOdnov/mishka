@@ -1,84 +1,99 @@
 .slider-feedback {
   position: relative;
-  // .slider-feedback__slide
+
+  //.slider-feedback__slide
   &__slide {
   }
-  // .slider-feedback__author
+
+  //.slider-feedback__author
   &__author {
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
+
     @media #{$tablet} {
       margin-top: 60px;
       margin-bottom: 0;
     }
   }
-  // .slider-feedback__name
+
+  //.slider-feedback__name
   &__name {
     display: block;
 
     font-weight: $font-weight-bold;
-    color: $font-color-title;
     font-style: normal;
-  }
-  // .slider-feedback__link
-  &__link {
     color: $font-color-title;
+  }
+
+  //.slider-feedback__link
+  &__link {
     font-style: normal;
     text-decoration: none;
+    color: $font-color-title;
 
     transition: all 0.3s ease 0s;
+
     &:hover,
     &:focus {
-      color: $color-accent-1;
       text-decoration: underline;
+      color: $color-accent-1;
     }
+
     &:active {
-      opacity: 0.3;
+      text-decoration: underline;
 
       color: $color-accent-1;
-      text-decoration: underline;
+      opacity: 0.3;
     }
   }
-  // .slider-feedback__navigation
+
+  //.slider-feedback__navigation
   &__navigation {
     position: relative;
-    display: flex;
-    transform: translate(0, -100%);
     z-index: 3;
+
+    display: flex;
+
+    transform: translate(0, -100%);
+
     @media #{$tablet} {
       position: absolute;
-      bottom: 0px;
       right: 0;
+      bottom: 0;
 
       margin: 0;
 
       transform: translate(0, 0);
     }
   }
-  // .slider-feedback__prev,
-  // .slider-feedback__next
+
+  //.slider-feedback__prev,
+  //.slider-feedback__next
   &__prev,
   &__next {
-    padding: 10px 20px;
     display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
     flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px 20px;
 
     fill: $logo-color;
     background-color: $bg-color-base;
     border: 1px solid $color-light-2;
 
     transition: fill 0.3s ease 0s;
+
     @media #{$tablet} {
       border: 1px transparent;
     }
+
     &:hover,
     &:focus {
       fill: $logo-color--hover;
     }
+
     &:active {
       fill: $logo-color--active;
     }

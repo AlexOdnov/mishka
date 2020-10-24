@@ -2,30 +2,35 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
-  // .social-list__item
+
+  //.social-list__item
   &__item {
     margin: 0 10px;
   }
-  // .social-list__link
+
+  //.social-list__link
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
+
     &:hover,
     &:focus {
       .social-list__icon {
         fill: $icon-color--hover;
       }
     }
+
     &:active {
       .social-list__icon {
         fill: $icon-color--active;
       }
     }
   }
-  // .social-list__icon
+
+  //.social-list__icon
   &__icon {
     fill: $color-dark-1;
 

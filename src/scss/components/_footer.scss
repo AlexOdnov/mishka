@@ -1,19 +1,23 @@
 .footer {
   background-color: $color-light-3;
-  // .footer__container
+
+  //.footer__container
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     min-height: 140px;
+
     @media #{$tablet} {
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
   }
-  // .footer__logo
+
+  //.footer__logo
   &__logo {
     display: none;
+
     @media #{$tablet} {
       display: flex;
       width: 102px;
@@ -27,25 +31,30 @@
       &:focus {
         fill: $icon-color--hover;
       }
+
       &:active {
         fill: $icon-color--hover;
       }
     }
   }
-  // .footer__social-list
+
+  //.footer__social-list
   &__social-list {
     flex-basis: 100%;
 
     border-bottom: 1px solid $color-light-2;
+
     @media #{$tablet} {
       flex-basis: 200px;
 
       border-bottom: none;
     }
   }
-  // .footer__copyright-link
+
+  //.footer__copyright-link
   &__copyright-link {
     margin: 22.5px 0;
+
     @media #{$tablet} {
       flex-basis: 200px;
     }

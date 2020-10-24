@@ -12,15 +12,6 @@
   border: none;
   cursor: pointer;
 
-  &__element {
-    display: block;
-    width: 100%;
-    height: $mmt-size * 0.1;
-    background-color: $mmt-color;
-    border-radius: $mmt-size * 0.05;
-    transition: all 0.3s ease 0s;
-  }
-
   &::before,
   &::after {
     content: '';
@@ -47,6 +38,7 @@
     &::after {
       background-color: $logo-color--hover;
     }
+
     .mobile-menu-toggler__element {
       background-color: $logo-color--hover;
     }
@@ -57,9 +49,19 @@
     &::after {
       background-color: $logo-color--active;
     }
+
     .mobile-menu-toggler__element {
       background-color: $logo-color--active;
     }
+  }
+
+  &__element {
+    display: block;
+    width: 100%;
+    height: $mmt-size * 0.1;
+    background-color: $mmt-color;
+    border-radius: $mmt-size * 0.05;
+    transition: all 0.3s ease 0s;
   }
 
   &.active {

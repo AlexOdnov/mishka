@@ -1,45 +1,48 @@
 .btn {
   display: inline-flex;
-  padding: 1em 2em;
   align-items: center;
   justify-content: center;
+  padding: 1em 2em;
 
-  font-size: $font-size-base;
   font-weight: $font-weight-bold;
+  font-size: $font-size-base;
   text-decoration: none;
   text-transform: uppercase;
   color: $font-color-base;
 
-  border: 2px solid $border-color;
   background-color: $bg-color-base;
+  border: 2px solid $border-color;
+  outline: none;
 
   transition: all 0.3s ease 0s;
-  outline: none;
 
   &:hover,
   &:focus {
-    background-color: $font-color-base;
     color: $font-color-btn--hover;
+    background-color: $font-color-base;
   }
 
   &:active {
     color: $font-color-btn--active;
   }
 
-  // .btn--wide
+  //.btn--wide
   &--wide {
     width: 100%;
   }
-  // .btn--center
+
+  //.btn--center
   &--center {
     display: flex;
     margin: 0 auto;
   }
-  // .btn--green
+
+  //.btn--green
   &--green {
     color: $color-light-1;
     background-color: $color-accent-1;
     border-color: $color-accent-1;
+
     &:hover,
     &:focus,
     &:active {
@@ -47,19 +50,22 @@
       background-color: $color-light-1;
     }
   }
-  // .btn--cart
+
+  //.btn--cart
   &--cart {
     padding: 0;
 
     fill: $icon-color;
     background-color: $bg-color-base;
     border-color: transparent;
+
     &:hover,
     &:focus {
       fill: $icon-color--hover;
       background-color: $bg-color-base;
       border-color: transparent;
     }
+
     &:active {
       fill: $icon-color--active;
       background-color: $bg-color-base;

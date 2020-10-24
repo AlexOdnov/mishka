@@ -3,10 +3,11 @@ $color-light-2: #ececec; //border
 $color-light-3: #f1f1f1; //footer
 $color-light-4: #f9f9f9; //header
 $color-dark-1: #000;
-$color-dark-2: #444444;
+$color-dark-2: #444;
 $color-accent-1: #63d1bb;
 $color-accent-2: #56c3b2; //dark
 
+//font-color
 $font-color-base: $color-dark-2;
 $font-color-light: $color-light-1;
 $font-color-title: $color-dark-1;
@@ -17,27 +18,33 @@ $font-color-btn: $color-dark-2;
 $font-color-btn--hover: $color-light-1;
 $font-color-btn--active: rgba($color-light-1, 0.3);
 
+//bacground
 $bg-color-base: $color-light-1;
 $bg-color-dark: $color-dark-1;
 $bg-color-btn: $color-light-1;
 $bg-color-btn--hover: $color-dark-2;
 $bg-color-btn--active: $color-dark-2;
 
+//icon
 $icon-color: rgba($color-dark-1, 0.2);
 $icon-color--hover: $color-accent-1;
 $icon-color--active: rgba($color-accent-1, 0.3);
 
+//logo
 $logo-color: $color-dark-1;
 $logo-color--hover: rgba($color-dark-1, 0.6);
 $logo-color--active: rgba($color-dark-1, 0.3);
 
+//border
 $border-color: $color-dark-2;
 $border-color--hover: $color-dark-2;
 $border-color--active: $color-dark-2;
 
+//font-family
 $font-base: 'Open Sans', sans-serif;
 $font-accent: 'Roboto', sans-serif;
 
+//font-size
 $font-size-base: 15px;
 $font-size-base-tab: 17px;
 $font-size-small: 12px;
@@ -46,10 +53,12 @@ $font-size-title: 1.6rem;
 $font-size-title-tab: 2.5rem;
 $font-size-title-des: 3.1rem;
 
+//font-weight
 $font-weight-base: 400;
 $font-weight-bold: 700;
 $font-weight-thin: 100;
 
+//container
 $container-width: 1150px;
 $container-padding: 30px;
 $container-padding-tab: 50px;
@@ -92,5 +101,5 @@ $d-laptop: (
   max-width: $bp-des,
 );
 
-// $gradient-base: ;
-// $gradient-alt: ;
+//$gradient-base: ;
+//$gradient-alt: ;

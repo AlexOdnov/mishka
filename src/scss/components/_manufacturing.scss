@@ -1,9 +1,10 @@
 .manufacturing {
-  // .manufacturing__container
+  //.manufacturing__container
   &__container {
     padding-bottom: 60px;
   }
-  // .manufacturing__wrapper
+
+  //.manufacturing__wrapper
   &__wrapper {
     display: grid;
     grid-template-columns: minmax(1px, 1fr);
@@ -11,19 +12,23 @@
     border: 1px solid $color-light-2;
 
     transition: box-shadow 0.3s ease 0s;
+
     &:hover,
     &:focus {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
+
     &:active {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     }
+
     @media #{$desktop} {
       grid-template-columns: 683px 1fr;
       column-gap: 50px;
     }
   }
-  // .manufacturing__title
+
+  //.manufacturing__title
   &__title {
     position: relative;
 
@@ -31,12 +36,13 @@
     padding-left: 52px;
 
     font-size: $font-size-big;
+
     &::before {
       content: '';
 
       position: absolute;
-      left: 0;
       top: 50%;
+      left: 0;
 
       display: block;
       width: 32px;
@@ -47,34 +53,40 @@
 
       transform: translate(0, -50%);
     }
+
     @media #{$tablet} {
       order: 1;
     }
+
     @media #{$desktop} {
-      padding-top: 45px;
-      padding-left: 0;
       margin-top: $container-padding-tab;
       margin-right: $container-padding-tab;
+      padding-top: 45px;
+      padding-left: 0;
+
       &::before {
         top: 0;
         transform: translate(0, 0);
       }
     }
   }
-  // .manufacturing__video
+
+  //.manufacturing__video
   &__video {
     position: relative;
 
-    height: calc((100vw - #{$container-padding} * 2) * 0.57);
     width: 100%;
+    height: calc((100vw - #{$container-padding} * 2) * 0.57);
 
     background-image: url(../../img/backgrounds/video-cover-mobile.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
     @media #{$tablet} {
       background-image: url(../../img/backgrounds/video-cover-tablet.jpg);
     }
+
     @media #{$desktop} {
       grid-column: 1 span;
       grid-row: 1 / 4;
@@ -83,54 +95,62 @@
       background-image: url(../../img/backgrounds/video-cover-desktop.jpg);
     }
   }
-  // .manufacturing__play-btn
+
+  //.manufacturing__play-btn
   &__play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     background-color: transparent;
     border-color: transparent;
 
     transform: translate(-50%, -50%);
     transition: all 0.3s ease 0s;
+
     &:hover,
     &:focus {
       transform: translate(-50%, -50%) scale(1.2);
     }
+
     &:active {
       opacity: 0.3;
       transform: translate(-50%, -50%) scale(0.8);
     }
   }
-  // .manufacturing__description
+
+  //.manufacturing__description
   &__description {
     margin: $container-padding;
+
     @media #{$tablet} {
-      margin-top: 0;
       order: 2;
+      margin-top: 0;
     }
+
     @media #{$desktop} {
       margin-right: $container-padding-tab;
     }
   }
-  // .manufacturing__btn
+
+  //.manufacturing__btn
   &__btn {
+    max-width: 100%;
     margin: $container-padding;
     margin-top: 0;
-    max-width: 100%;
+
     @media #{$tablet} {
       order: 3;
     }
+
     @media #{$desktop} {
+      align-self: end;
       margin-right: $container-padding-tab;
       margin-bottom: $container-padding-tab;
-
-      align-self: end;
     }
   }
 }

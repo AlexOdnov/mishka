@@ -2,6 +2,7 @@
   position: relative;
 
   background-color: $color-light-4;
+
   @media #{$tablet} {
     &::after {
       content: '';
@@ -18,18 +19,21 @@
       background-repeat: repeat-x;
     }
   }
-  // .page-header__title
+
+  //.page-header__title
   &__title {
     margin: 0;
     padding: 70px 0;
 
     font-size: $font-size-title;
     text-align: center;
+
     @media #{$tablet} {
       padding: 55px 0 85px;
 
       font-size: $font-size-title-tab;
     }
+
     @media #{$desktop} {
       font-size: $font-size-title-des;
     }
